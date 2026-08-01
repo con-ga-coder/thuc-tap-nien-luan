@@ -27,6 +27,7 @@ Chi tiết công thức và sơ đồ đầy đủ xem tại Chương 3 của b�
 
 ```
 .
+├── Report                       #file báo cáo pdf
 ├── configs/
 │   └── config.yaml              # Toàn bộ hyperparameter (khớp Bảng 3.2 / 4.3 báo cáo)
 ├── data/
