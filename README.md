@@ -56,7 +56,7 @@ Chi tiết công thức và sơ đồ đầy đủ xem tại Chương 3 của b�
 ## 3. Cài đặt môi trường
 
 Yêu cầu: **Python 3.9+**. Khuyến nghị dùng GPU có CUDA (báo cáo dùng GPU 4GB VRAM,
-xem mục 4.1.1), nhưng toàn bộ code vẫn chạy được trên CPU (chậm hơn).
+xem mục 4.1.1), nhưng toàn bộ code vẫn chạy được trên CPU (chậm hơn). Hoặc có thể chạy trên google Colab để test: https://colab.research.google.com/
 
 ```bash
 # 1. Clone repository
