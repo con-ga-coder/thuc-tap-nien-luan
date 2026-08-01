@@ -60,7 +60,7 @@ xem mục 4.1.1), nhưng toàn bộ code vẫn chạy được trên CPU (chậm
 
 ```bash
 # 1. Clone repository
-git clone https://github.com/<username>/thuc-tap-nien-luan.git
+git clone https://github.com/<con-ga-coder>/thuc-tap-nien-luan.git
 cd thuc-tap-nien-luan
 
 # 2. Tạo virtual environment
