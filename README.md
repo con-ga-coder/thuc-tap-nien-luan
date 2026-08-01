@@ -3,8 +3,8 @@
 Báo cáo Niên luận — Học phần **Thực tập viết niên luận (TIN3142)**
 Khoa Công nghệ Thông tin — Trường Đại học Khoa học, Đại học Huế
 
-- **Sinh viên thực hiện:** Trần Hữu Minh Duy — MSSV: 23T1020134 — Lớp CNTT K47I
-- **Giảng viên hướng dẫn:** ThS. Lê Quang Chiến
+- **Sinh viên thực hiện:** Trần Hữu Minh Duy — MSV: 23T1020134 — Lớp CNTT K47I
+- **Giảng viên hướng dẫn:** Lê Quang Chiến
 
 Repository này chứa toàn bộ mã nguồn để tái tạo (reproduce) các số liệu và biểu đồ
 trong báo cáo: thu thập dữ liệu OHLCV (Binance) + tiêu đề tin tức (CoinDesk,
