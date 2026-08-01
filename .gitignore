@@ -1,0 +1,30 @@
+# Data & checkpoints (quá nặng để commit lên GitHub)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/raw/ohlcv_sample.csv
+!data/raw/news_sample.csv
+checkpoints/*.pt
+checkpoints/*.pth
+!checkpoints/.gitkeep
+
+# Figures sinh ra khi chạy (giữ lại thư mục, bỏ file)
+figures/*.png
+!figures/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# Env / secrets
+.env
+*.log
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/
