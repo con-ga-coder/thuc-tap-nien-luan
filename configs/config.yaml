@@ -1,0 +1,48 @@
+# =========================================================
+# Config trung tâm — các giá trị khớp Bảng 3.2 / 4.3 báo cáo
+# =========================================================
+
+data:
+  symbol: "BTCUSDT"
+  interval: "1h"
+  start_date: "2024-01-01"
+  end_date: "2026-07-01"
+  news_sources:
+    - "coindesk"
+    - "cointelegraph"
+    - "theblock"
+  raw_ohlcv_path: "data/raw/ohlcv_raw.csv"
+  raw_news_path: "data/raw/news_raw.csv"
+  processed_path: "data/processed/dataset_features.csv"
+  lookback_window: 48        # T = 48 giờ
+  train_ratio: 0.70
+  val_ratio: 0.15
+  test_ratio: 0.15
+
+model:
+  n_technical_features: 16   # 5 OHLCV + 11 chỉ báo phái sinh
+  d_model: 768
+  n_encoder_layers: 6
+  n_attention_heads: 12
+  ffn_hidden_dim: 3072
+  encoder_dropout: 0.1
+  classifier_hidden: [256, 64]
+  classifier_dropout: [0.3, 0.2]
+  n_classes: 2
+  sentiment_model_name: "distilbert-base-uncased-finetuned-sst-2-english"
+
+training:
+  batch_size: 32
+  gradient_accumulation_steps: 2   # mô phỏng batch 64 trên GPU 4GB
+  max_epochs: 50
+  early_stopping_patience: 10
+  learning_rate: 1.0e-4
+  weight_decay: 1.0e-4
+  grad_clip_norm: 1.0
+  mixed_precision: true            # FP16
+  seed: 42
+  checkpoint_path: "checkpoints/best_model.pt"
+
+evaluation:
+  classification_threshold: 0.5
+  figures_dir: "figures/"
