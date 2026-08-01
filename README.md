@@ -1,2 +1,3 @@
-# thuc-tap-nien-luan
-đề tài về dự đoán giá btc
+Họ tên: Trần Hữu Minh Duy
+MSSV: 23T1020134
+Mã lớp: 2026.2.N16
